@@ -14,7 +14,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5600/api/posts')
+    axios.get('http://daly-deployment.herokuapp.com/api/posts')
          .then(res => {
            this.setState({ posts: res.data });
          })
